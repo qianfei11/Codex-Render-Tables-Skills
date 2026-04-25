@@ -24,7 +24,7 @@ Clone or copy this repository into your Codex skills directory:
 
 ```bash
 mkdir -p ~/.codex/skills
-git clone <your-repo-url> ~/.codex/skills/render-box-tables
+git clone git@github.com:qianfei11/Codex-Render-Tables-Skills.git ~/.codex/skills/render-box-tables
 ```
 
 If you already have the repository locally, use:
@@ -96,4 +96,6 @@ Check the Python helper:
 python3 -m py_compile scripts/render_table.py
 ```
 
-Before publishing, choose and add a license if you want others to have explicit reuse rights.
+## License
+
+MIT License. See `LICENSE`.
