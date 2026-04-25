@@ -24,7 +24,7 @@ Clone or copy this repository into your Codex skills directory:
 
 ```bash
 mkdir -p ~/.codex/skills
-git clone git@github.com:qianfei11/Codex-Render-Tables-Skills.git ~/.codex/skills/render-box-tables
+git clone https://github.com/qianfei11/Codex-Render-Tables-Skills.git ~/.codex/skills/render-box-tables
 ```
 
 If you already have the repository locally, use:
@@ -61,25 +61,33 @@ Convert a file with no leading indentation:
 python3 scripts/render_table.py --indent "" table.md
 ```
 
-Example input:
+## Examples
 
-```markdown
-| Mode | Simultaneous | Host UI |
-| --- | --- | --- |
-| Exclusive | No | Breaks |
-| Hardware partition | Yes | Preserved |
-```
-
-Example output:
+Use the skill in Codex:
 
 ```text
-  ┌────────────────────┬──────────────┬───────────┐
-  │        Mode        │ Simultaneous │  Host UI  │
-  ├────────────────────┼──────────────┼───────────┤
-  │ Exclusive          │ No           │ Breaks    │
-  ├────────────────────┼──────────────┼───────────┤
-  │ Hardware partition │ Yes          │ Preserved │
-  └────────────────────┴──────────────┴───────────┘
+$render-box-tables List three usage modes for this skill as a table.
+```
+
+Convert Markdown with the script:
+
+```markdown
+| Item | Use |
+| --- | --- |
+| Skill invocation | Ask Codex with `$render-box-tables` |
+| Script conversion | Run `render_table.py` on Markdown |
+```
+
+Rendered output:
+
+```text
+  ┌───────────────────┬─────────────────────────────────────┐
+  │       Item        │                 Use                 │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ Skill invocation  │ Ask Codex with `$render-box-tables` │
+  ├───────────────────┼─────────────────────────────────────┤
+  │ Script conversion │ Run `render_table.py` on Markdown   │
+  └───────────────────┴─────────────────────────────────────┘
 ```
 
 ## Development
