@@ -1,0 +1,4 @@
+interface:
+  display_name: "Box Table Renderer"
+  short_description: "Render requested tables as Unicode boxes"
+  default_prompt: "Use $render-box-tables for table-output requests and render the result as a Unicode box-drawing table."
